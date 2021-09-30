@@ -38,6 +38,12 @@ namespace UserUI
         {
             InitializeComponent();
 
+            pictureBox_Gris17.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema17.Image = UserUI.Properties.Resources.Tono4;
+
+            pictureBox_Gris18.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema18.Image = UserUI.Properties.Resources.Tono4;
+
             listaAdministradores = listaAdministradoresRecibida;
             listaEmpleados = listaEmpleadosRecibida;
             listaProductos = listaProductosRecibida;

@@ -40,6 +40,12 @@ namespace UserUI
         {
             InitializeComponent();
 
+            pictureBox_Gris5.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema5.Image = UserUI.Properties.Resources.Tono4;
+
+            pictureBox_Gris6.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema6.Image = UserUI.Properties.Resources.Tono4;
+
             esAdmin = esAdminRecibido;
             seccionElegida = SeccionElegidaRecibida;
             listaAdministradores = listaAdministradoresRecibida;
@@ -146,6 +152,7 @@ namespace UserUI
                     {
                         //ACA TENGO QUE MOSTRAR EL FORM QUE PIDE ID
                         PedidoIDForm formPedidoID = new PedidoIDForm(seccionElegida, "Modificar", listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes);
+                        formPedidoID.Icon = UserUI.Properties.Resources.pedidoId;
                         formPedidoID.ShowDialog();
                         Refresh(listaClientes);
                         break;
@@ -154,6 +161,7 @@ namespace UserUI
                     {
                         //ACA TENGO QUE MOSTRAR EL FORM QUE PIDE ID
                         PedidoIDForm formPedidoID = new PedidoIDForm(seccionElegida, "Modificar", listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes);
+                        formPedidoID.Icon = UserUI.Properties.Resources.pedidoId;
                         formPedidoID.ShowDialog();
                         Refresh(listaProductos);
                         break;
@@ -163,12 +171,6 @@ namespace UserUI
                     {
 
                         #region CODIGO SUSPENDIDO DE MODIFICACION VENTA
-                        /*
-                        //ACA TENGO QUE MOSTRAR EL FORM QUE PIDE ID
-                        PedidoIDForm formPedidoID = new PedidoIDForm(seccionElegida, "Modificar", listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes);
-                        formPedidoID.ShowDialog();
-                        Refresh(listaVentas);
-                        */
                         #endregion
                         break;
                     }
@@ -177,6 +179,7 @@ namespace UserUI
                     {
                         //ACA TENGO QUE MOSTRAR EL FORM QUE PIDE ID
                         PedidoIDForm formPedidoID = new PedidoIDForm(seccionElegida, "Modificar", listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes);
+                        formPedidoID.Icon = UserUI.Properties.Resources.pedidoId;
                         formPedidoID.ShowDialog();
                         Refresh(listaEmpleados);
                         break;
@@ -186,6 +189,7 @@ namespace UserUI
                     {
                         //ACA TENGO QUE MOSTRAR EL FORM QUE PIDE ID
                         PedidoIDForm formPedidoID = new PedidoIDForm(seccionElegida, "Modificar", listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes);
+                        formPedidoID.Icon = UserUI.Properties.Resources.pedidoId;
                         formPedidoID.ShowDialog();
                         Refresh(listaAdministradores);
                         break;
@@ -211,6 +215,7 @@ namespace UserUI
                 case "Clientes":
                     {
                         AltaModifCliente formAltaModCliente = new AltaModifCliente(listaClientes, "Agregar", idUsuarioLogeado);
+                        formAltaModCliente.Icon = UserUI.Properties.Resources.agregar;
 
                         //Lo muestro como form modal y sigo mostrando el panel de control
                         formAltaModCliente.ShowDialog();
@@ -220,6 +225,7 @@ namespace UserUI
                 case "Stock":
                     {
                         AltaModifProducto formAltaModProducto = new AltaModifProducto(listaProductos, "Agregar", idUsuarioLogeado);
+                        formAltaModProducto.Icon = UserUI.Properties.Resources.producto;
 
                         //Lo muestro como form modal y sigo mostrando el panel de control
                         formAltaModProducto.ShowDialog();
@@ -230,6 +236,7 @@ namespace UserUI
                     {
 
                         AltaModifVenta formPedidoIdAltaCamposVenta = new AltaModifVenta(listaVentas, listaProductos, listaClientes, "Agregar", idUsuarioLogeado, esAdmin);
+                        formPedidoIdAltaCamposVenta.Icon = UserUI.Properties.Resources.pedidoId;
 
                         //Lo muestro como form modal y sigo mostrando el panel de control
                         formPedidoIdAltaCamposVenta.ShowDialog();
@@ -239,6 +246,7 @@ namespace UserUI
                 case "Empleados":
                     {
                         AltaModifEmpleado formAltaModEmpleado = new AltaModifEmpleado(listaEmpleados, "Agregar");
+                        formAltaModEmpleado.Icon = UserUI.Properties.Resources.agregar;
 
                         //Lo muestro como form modal y sigo mostrando el panel de control
                         formAltaModEmpleado.ShowDialog();
@@ -250,6 +258,7 @@ namespace UserUI
                     {
 
                         AltaModifAdministrador formAltaModfAdmin = new AltaModifAdministrador(listaAdministradores, "Agregar");
+                        formAltaModfAdmin.Icon = UserUI.Properties.Resources.agregar;
 
                         //Lo muestro como form modal y sigo mostrando el panel de control
                         formAltaModfAdmin.ShowDialog();
@@ -276,6 +285,8 @@ namespace UserUI
                     {
                         //ACA TENGO QUE MOSTRAR EL FORM QUE PIDE ID
                         PedidoIDForm formPedidoID = new PedidoIDForm(seccionElegida, "Eliminar", listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes);
+                        formPedidoID.Icon = UserUI.Properties.Resources.pedidoId;
+
                         formPedidoID.ShowDialog();
                         Refresh(listaClientes);
                         break;
@@ -284,6 +295,8 @@ namespace UserUI
                     {
                         //ACA TENGO QUE MOSTRAR EL FORM QUE PIDE ID
                         PedidoIDForm formPedidoID = new PedidoIDForm(seccionElegida, "Eliminar", listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes);
+                        formPedidoID.Icon = UserUI.Properties.Resources.pedidoId;
+
                         formPedidoID.ShowDialog();
                         Refresh(listaProductos);
                         break;
@@ -292,6 +305,8 @@ namespace UserUI
                     {
                         //ACA TENGO QUE MOSTRAR EL FORM QUE PIDE ID
                         PedidoIDForm formPedidoID = new PedidoIDForm(seccionElegida, "Eliminar", listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes);
+                        formPedidoID.Icon = UserUI.Properties.Resources.pedidoId;
+
                         formPedidoID.ShowDialog();
                         Refresh(listaVentas, esAdmin);
                         break;
@@ -300,6 +315,8 @@ namespace UserUI
                     {
                         //ACA TENGO QUE MOSTRAR EL FORM QUE PIDE ID
                         PedidoIDForm formPedidoID = new PedidoIDForm(seccionElegida, "Eliminar", listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes);
+                        formPedidoID.Icon = UserUI.Properties.Resources.pedidoId;
+
                         formPedidoID.ShowDialog();
                         Refresh(listaEmpleados);
                         break;
@@ -309,6 +326,8 @@ namespace UserUI
                     {
                         //ACA TENGO QUE MOSTRAR EL FORM QUE PIDE ID
                         PedidoIDForm formPedidoID = new PedidoIDForm(seccionElegida, "Eliminar", listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes);
+                        formPedidoID.Icon = UserUI.Properties.Resources.pedidoId;
+
                         formPedidoID.ShowDialog();
                         Refresh(listaAdministradores);
                         break;
@@ -327,6 +346,8 @@ namespace UserUI
         {
             //ACA TENGO QUE MOSTRAR EL FORM QUE PIDE ID
             PedidoIDForm formPedidoID = new PedidoIDForm(seccionElegida, "Facturar", listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes);
+            formPedidoID.Icon = UserUI.Properties.Resources.pedidoId;
+
             formPedidoID.ShowDialog();
 
         }

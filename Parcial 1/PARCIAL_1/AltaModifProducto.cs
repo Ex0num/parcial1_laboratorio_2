@@ -29,6 +29,13 @@ namespace UserUI
         public AltaModifProducto(List<Producto> listaProductosRecibida, string ordenMuestreadoRecibido, int posicionProductoParaAccionarRecibida)
         {
             InitializeComponent();
+
+            pictureBox_Gris13.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema13.Image = UserUI.Properties.Resources.Tono4;
+
+            pictureBox_Gris14.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema14.Image = UserUI.Properties.Resources.Tono4;
+
             listaProductos = listaProductosRecibida;
             ordenMuestra = ordenMuestreadoRecibido;
             posicionProducto = posicionProductoParaAccionarRecibida;
@@ -42,7 +49,6 @@ namespace UserUI
                 label_IngreseFechaVencimientoABMProducto.Text = "Ingrese la nueva fecha de vencimiento";
                 label_IngreseDescripcionABMProducto.Text = "Ingrese una nueva y breve descripcion";
                 label_IngreseCantidadUnidadesABMProducto.Text = "Ingrese una nueva cantidad de unidades";
-                //comboBox_TipoProductoIngresadoABMProducto.SelectedIndex = 0;
             }
         }
 

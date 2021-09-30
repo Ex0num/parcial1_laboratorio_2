@@ -27,9 +27,15 @@ namespace UserUI
         public AltaModifAdministrador(List<Administrador> listaAdministradoresRecibida, string ordenMuestreadoRecibido)
         {
             InitializeComponent();
+
+            pictureBox_Gris7.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema7.Image = UserUI.Properties.Resources.Tono4;
+
+            pictureBox_Gris8.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema8.Image = UserUI.Properties.Resources.Tono4;
+
             listaAdministradores = listaAdministradoresRecibida;
             ordenMuestra = ordenMuestreadoRecibido;
- 
         }
 
 

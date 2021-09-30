@@ -25,6 +25,13 @@ namespace UserUI
         public AltaModifEmpleado(List<Empleado> listaEmpleadosRecibida, string ordenMuestreadoRecibido)
         {
             InitializeComponent();
+
+            pictureBox_Gris11.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema11.Image = UserUI.Properties.Resources.Tono4;
+
+            pictureBox_Gris12.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema12.Image = UserUI.Properties.Resources.Tono4;
+
             listaEmpleados = listaEmpleadosRecibida;
             ordenMuestra = ordenMuestreadoRecibido;
         }

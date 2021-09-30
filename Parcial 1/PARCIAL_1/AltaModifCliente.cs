@@ -29,6 +29,12 @@ namespace UserUI
         {
             InitializeComponent();
 
+            pictureBox_Gris9.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema9.Image = UserUI.Properties.Resources.Tono4;
+
+            pictureBox_Gris10.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema10.Image = UserUI.Properties.Resources.Tono4;
+
             listaClientes = listaClientesRecibida;
             ordenMuestra = ordenMuestreadoRecibido;
             posicionCliente = posicionClienteParaAccionarRecibida;

@@ -1,0 +1,8 @@
+Facturacion de la compra
+
+El comprador: Gabriel
+Compro el producto: Comidetex 4000
+Unidades adquiridas: 2
+Precio por unidad del producto: 150
+
+Gracias por su compra en Patitas-Petshop.

@@ -32,6 +32,15 @@ namespace PARCIAL_1
         public LoginForm()
         {
             InitializeComponent();
+
+            pictureBox_Gris1.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema1.Image = UserUI.Properties.Resources.Tono4;
+
+            pictureBox_Gris2.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema2.Image = UserUI.Properties.Resources.Tono4;
+
+            Form.ActiveForm.Icon = UserUI.Properties.Resources.abm;
+
         }
 
 
@@ -127,6 +136,8 @@ namespace PARCIAL_1
             {
            
                 OptionsForm formOpciones = new OptionsForm(usuarioAux.Nombre, esAdmin, idUsuarioLogeado, listaAdministradores, listaProductos, listaVentas, listaClientes, listaEmpleados);
+                formOpciones.Icon = UserUI.Properties.Resources.opciones;
+
                 this.Hide();
                 
                 if (esAdmin == false)

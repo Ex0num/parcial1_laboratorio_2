@@ -55,6 +55,12 @@ namespace UserUI
         {
             InitializeComponent();
 
+            pictureBox_Gris3.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema3.Image = UserUI.Properties.Resources.Tono4;
+
+            pictureBox_Gris4.Image = UserUI.Properties.Resources.Tono5;
+            pictureBox_Crema4.Image = UserUI.Properties.Resources.Tono4;
+
             esAdmin = esAdminRecibido;
             listaAdministradores = listaAdministradoresRecibida;
             listaEmpleados = listaEmpleadosRecibida;
@@ -100,6 +106,7 @@ namespace UserUI
         {
             //Le paso la seccion elegida (Clientes) y las listas de todos.
             ABMForm ABMForm = new ABMForm(SeccionesMenu.Clientes.ToString(), listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes, esAdmin,idUsuarioLogeado);
+            ABMForm.Icon = UserUI.Properties.Resources.abm;
             this.Hide();
             ABMForm.ShowDialog();
             this.Show();
@@ -116,6 +123,7 @@ namespace UserUI
         {
             //Le paso la seccion elegida (Stock) y las listas de todos.
             ABMForm ABMForm = new ABMForm(SeccionesMenu.Stock.ToString(), listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes, esAdmin,idUsuarioLogeado);
+            ABMForm.Icon = UserUI.Properties.Resources.abm;
             this.Hide();
             ABMForm.ShowDialog();
             this.Show();
@@ -132,6 +140,7 @@ namespace UserUI
         {
             //Le paso la seccion elegida (Ventas) y las listas de todos.
             ABMForm ABMForm = new ABMForm(SeccionesMenu.Ventas.ToString(), listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes, esAdmin, idUsuarioLogeado);
+            ABMForm.Icon = UserUI.Properties.Resources.abm;
             this.Hide();
             ABMForm.ShowDialog();
             this.Show();
@@ -155,6 +164,7 @@ namespace UserUI
             {
                 //Le paso la seccion elegida (Empleados) y las listas de todos.
                 ABMForm ABMForm = new ABMForm(SeccionesMenu.Empleados.ToString(), listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes, esAdmin, idUsuarioLogeado);
+                ABMForm.Icon = UserUI.Properties.Resources.abm;
                 this.Hide();
                 ABMForm.ShowDialog();
                 this.Show();
@@ -180,6 +190,8 @@ namespace UserUI
 
                 //Le paso la seccion elegida (Administradores) y las listas de todos.
                 ABMForm ABMForm = new ABMForm(SeccionesMenu.Administradores.ToString(), listaAdministradores, listaEmpleados, listaVentas, listaProductos, listaClientes, esAdmin, idUsuarioLogeado);
+                ABMForm.Icon = UserUI.Properties.Resources.abm;
+
                 this.Hide();
                 ABMForm.ShowDialog();
                 this.Show();

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="ABMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AltaModifAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AltaModifCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AltaModifEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AltaModifProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AltaModifVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PedidoIDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
