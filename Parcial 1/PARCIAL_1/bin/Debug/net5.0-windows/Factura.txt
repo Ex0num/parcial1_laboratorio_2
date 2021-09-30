@@ -1,0 +1,8 @@
+Facturacion de la compra
+
+El comprador: Martina
+Compro el producto: Toalix
+Unidades adquiridas: 10
+Precio por unidad del producto: 400
+
+Gracias por su compra en Patitas-Petshop.
