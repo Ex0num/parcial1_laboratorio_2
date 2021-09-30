@@ -24,7 +24,7 @@ namespace Entidades
             int retorno = -1;
 
             //TextWriter ES EL OBJETO QUE SE UTILIZA PARA LECTURA, ESCRITURA DE ARCHIVOS entre otras cosas
-            TextWriter escritor = new StreamWriter("Factura.txt");
+            TextWriter escritor = new StreamWriter("Factura.txt",false);
 
             escritor.WriteLine("Facturacion de la compra");
             escritor.WriteLine("");
